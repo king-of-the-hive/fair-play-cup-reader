@@ -20,8 +20,6 @@ values = response["values"]
 df = pd.DataFrame(values).T
 df = df.reset_index(drop=True)
 
-df.to_csv("test.csv", sep="\t")
-
 matches = {}
 for i, row in df.iterrows():
     if ('white' in row[1] and 'black' in row[5]) or ('black' in row[1] and 'white' in row[5]):
