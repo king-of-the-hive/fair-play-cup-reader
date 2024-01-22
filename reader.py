@@ -13,12 +13,24 @@ tourn_short_name = "[FP24]"
 calendar_service = gs_cal()
 sheet_service = gs()
 spreadsheet_id = "1UV9LrVmk5e8N_-iLr9IMVW0kdQ9_cmAw6b9Ro89ZBbk"
-_range = "R. 1 - Team Comp.!A:H"
+NUM_ROUNDS = 6
 
-response = read_sheet(sheet_service, spreadsheet_id, _range)
-values = response["values"]
-df = pd.DataFrame(values).T
-df = df.reset_index(drop=True)
+def get_round_fd(val):
+    df = pd.DataFrame(val).T
+    df = df.reset_index(drop=True)
+    return df
+
+rounds = []
+for j in range(NUM_ROUNDS):
+    _range = f"R. {j+1} - Team Comp.!A:H"
+    try:
+        response = read_sheet(sheet_service, spreadsheet_id, _range)
+        values = response["values"]
+        rounds.append(get_round_fd(values))
+    except:
+        pass
+
+df = pd.concat(rounds, ignore_index=True)
 
 matches = {}
 for i, row in df.iterrows():
