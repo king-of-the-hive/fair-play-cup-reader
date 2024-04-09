@@ -12,7 +12,7 @@ def read_existing_events(service):
     while True:
         events = (
             service.events()
-            .list(calendarId="primary", pageToken=page_token, timeZone="Etc/GMT-0")
+            .list(calendarId="beekeepertournament@gmail.com", pageToken=page_token, timeZone="Etc/GMT-0")
             .execute()
         )
         for event in events["items"]:
@@ -71,4 +71,4 @@ def insertevent(eventdata, service):
         "visibility": "public",
         "colorId": eventdata["colorid"],
     }
-    event = service.events().insert(calendarId="primary", body=event).execute()
+    event = service.events().insert(calendarId="beekeepertournament@gmail.com", body=event).execute()
