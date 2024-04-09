@@ -1,3 +1,3 @@
 # fair-play-cup-reader
 
-main code in reader.py
+to get permissions to write to calendar, contact stepanzo on discord
