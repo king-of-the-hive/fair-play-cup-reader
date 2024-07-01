@@ -5,8 +5,8 @@ from datetime import datetime, timezone, timedelta
 
 print("STARTING")
 service = get_service()
-tournaments = [116]
-tourn_short_name = "[WC24open]"
+tournaments = [117]
+tourn_short_name = "[WC24]"
 
 
 def readtournament(id, existing_matchids):
