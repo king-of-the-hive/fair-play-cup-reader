@@ -65,7 +65,7 @@ def readtournament(id, existing_matchids):
                             shouldinsertevent = False
                         else:
                             service.events().delete(
-                                calendarId="primary",
+                                calendarId="beekeepertournament@gmail.com",
                                 eventId=existing_matchids[matchid]["eventId"],
                             ).execute()
                     if shouldinsertevent:
