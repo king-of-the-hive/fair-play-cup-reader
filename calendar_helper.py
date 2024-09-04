@@ -59,6 +59,7 @@ def insertevent(eventdata, service):
             eventdata["p1"],
             eventdata["p2"],
             eventdata["matchid"],
+            "" if "link" not in eventdata else "<br/><br/>Link: {}".format(eventdata["link"]),
         ),
         "start": {
             "dateTime": "{}:00-00:00".format(eventdata["start"]),
