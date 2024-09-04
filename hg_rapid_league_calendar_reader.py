@@ -104,7 +104,7 @@ for tournament in tournaments_list:
                     shouldinsertevent = False
                 else:
                     calendar_service.events().delete(
-                        calendarId="primary",
+                        calendarId="beekeepertournament@gmail.com",
                         eventId=existing_matchids[str(matchid)]["eventId"],
                     ).execute()
             if shouldinsertevent:
