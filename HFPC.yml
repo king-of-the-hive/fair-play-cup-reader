@@ -1,0 +1,14 @@
+INVITE_EXCEPTION: "stepanzo" # change this to your username, you can't invite yourself
+TOURNAMENT_NAME: "HFPC 2025"
+SEASON_NAME: "ROUND 2"
+TOURNAMENT_DESCRIPTION: "[Rules](https://docs.google.com/document/d/1vK73m11D1qrnhkFaBEIFtIVyCKMEkz9YqEXaeGwJWCo/edit?tab=t.0#heading=h.17p32z5ld24k)\n\n[Teams](https://docs.google.com/spreadsheets/d/1jC8bkvq2mOlvUezgPFDPgFAs62kXh7NsHxgBDD4P6cA/edit?gid=801070288#gid=801070288)"
+TOURNAMENT_MODE: "Real time"
+INVITES_MODE: "Invite Only"
+TIME_DISTRIBUTION: "15+15"
+START_MODE: "Non Manual"
+START_DATE: "2025-02-01"
+START_HOUR: 4
+AMPM: "A" # A or P
+MIN_PLAYERS: 2
+MAX_PLAYERS: 4
+FIXED_ROUND_DURATION: 13
