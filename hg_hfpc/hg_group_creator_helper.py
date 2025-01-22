@@ -161,7 +161,7 @@ def send_invites_to_players(driver, tournament_link, player_names, **params):
     for p, player in enumerate(player_names):
         if player != INVITE_EXCEPTION:
             he.write(player, into='Invite player')
-            button = he.S("//html/body/main/div/div/div/div/div/div/div/div/button")
+            button = he.S("//html/body/main/div/div/div/div/div/div/div/div/button", to_right_of=player)
             he.click(button)
             he.go_to(tournament_link)
         else:
