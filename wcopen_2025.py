@@ -1,8 +1,8 @@
 from datetime import datetime, timezone, timedelta
 from calendar_helper import get_service as gs_cal
 from calendar_helper import read_existing_events, insertevent
-from google_sheets_helper import get_service as gs
-from google_sheets_helper import read_sheet
+from helper import get_service as gs
+from helper import read_sheet
 import pandas as pd
 import re
 
